@@ -1,6 +1,0 @@
-streamlit
-openai 
-semantic_kernel
-requests
-asyncio
-streamlit_extras
