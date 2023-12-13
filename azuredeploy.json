@@ -40,7 +40,7 @@
       },
       "linuxFxVersion": {
         "type": "string",
-        "defaultValue": "PYTHON|3.11",
+        "defaultValue": "PYTHON|3.9",
         "metadata": {
           "description": "The Runtime stack of current web app"
         }
