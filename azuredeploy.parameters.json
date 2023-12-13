@@ -9,7 +9,7 @@
             "value": "B1"
         },
         "linuxFxVersion": {
-            "value": "PYTHON|3.11"
+            "value": "PYTHON|3.9"
         },
         "repoUrl": {
             "value": "https://github.com/TaylorNguyen112/streamlit-azure.git"
