@@ -4,7 +4,7 @@ import openai  # Make sure to install OpenAI library as well
 import semantic_kernel.connectors.ai.open_ai as sk_oai
 from semantic_kernel.utils.settings import azure_openai_settings_from_dot_env_as_dict
 from dotenv import load_dotenv
-from weather import weather_report
+# from weather import weather_report
 from streamlit_extras.add_vertical_space import add_vertical_space
 import semantic_kernel as sk
 from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion
@@ -66,11 +66,11 @@ def create_prompt(problem):
         f"Source:\nTitle: {result['name']}\nURL: {result['url']}\nContent: {result['snippet']}" for result in results
     ]
     search_result = "\n\n".join(results_prompts)
-    weather_info = weather_report()
+    # weather_info = weather_report()
     sk_prompt = """
     You are a friendly and gentle AI assistant designed to assist with health concerns.
 
-    Based on user issue {search_result} and the weather information """ + weather_info + """ you will ask questions to clarify the issue.
+    Based on user issue {search_result} you will ask questions to clarify the issue.
     
     Do not ask 5 questions at the same time, you only ask 1 question each time.
     
